@@ -1,4 +1,4 @@
-# code_skeleton
+# code skeleton
 
 - HTML5
 - CSS3
