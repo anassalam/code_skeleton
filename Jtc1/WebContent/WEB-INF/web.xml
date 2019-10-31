@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+     <display-name>Jtc</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<!--    parameters valid for each servlet-->
+	<context-param>
+		<param-name>state</param-name>
+		<param-value>UTTAR PRADESH</param-value>
+	</context-param>
+	<context-param>
+		<param-name>country</param-name>
+		<param-value>INDIA</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>test</servlet-name>
+		<servlet-class>com.jtcindia.servlets.JtcServlet</servlet-class>
+		<!--   config parameter:  specified for each servlet -->
+		
+		<init-param>
+			<param-name>Email</param-name>
+			<param-value>sadhnashukla59@gmail.com</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>Phone</param-name>
+			<param-value>33333</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>state</param-name>
+			<param-value>delhi</param-value>
+		</init-param>
+
+		 <load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>test</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+</web-app>
