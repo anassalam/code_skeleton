@@ -1,1 +1,16 @@
+th{
+    background-color: blueviolet;
+    color:white;
+    font-weight: bold;
+}
+table, th, tr, td, tfoot{
+ border-collapse: collapse;
+ border:1px solid black;
+ 
+}
+td, th{
+  width:300px;
+  text-align: center;
+}
 
+tr:nth-child(even) {background-color: #f2f2f2;}
